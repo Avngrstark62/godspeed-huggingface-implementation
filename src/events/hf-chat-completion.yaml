@@ -1,0 +1,26 @@
+"http.post./hf-chat-completion":
+  fn: hf-chat-completion
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - messages
+          properties:
+            messages:
+              type: array
+            model:
+              type: string
+            provider:
+              type: string
+            max_tokens:
+              type: integer
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            type: object
+
+

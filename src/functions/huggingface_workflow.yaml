@@ -1,0 +1,7 @@
+id: huggingface_workflow
+summary: Run HuggingFace inference using a plugin
+description: Accepts task, model, input, and parameters and returns the result
+tasks:
+  - id: call_huggingface_function
+    fn: huggingface
+    args: <% inputs.body %>

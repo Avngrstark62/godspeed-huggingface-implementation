@@ -1,0 +1,9 @@
+id: hf-translation
+summary: Run translation via HF plugin
+tasks:
+  - id: translate_text
+    fn: datasource.huggingface.translation
+    args:
+      model: <% inputs.body.model %>
+      provider: <% inputs.body.provider %>
+      inputs: <% inputs.body.inputs %>

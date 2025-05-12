@@ -1,0 +1,26 @@
+"http.post./huggingface":
+  fn: huggingface_workflow
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          required: [task]
+          properties:
+            inputs:
+              type: string
+            task:
+              type: string
+              enum: [chatCompletion, textClassification, summarization]
+            model:
+              type: string
+            provider:
+              type: string
+            parameters:
+              type: object
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            type: object

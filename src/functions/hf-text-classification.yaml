@@ -1,0 +1,9 @@
+id: hf-text-classification
+summary: Run text classification via HF plugin
+tasks:
+  - id: classify_text
+    fn: datasource.huggingface.textClassification
+    args:
+      model: <% inputs.body.model %>
+      provider: <% inputs.body.provider %>
+      inputs: <% inputs.body.inputs %>

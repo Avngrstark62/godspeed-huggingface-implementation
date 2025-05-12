@@ -1,0 +1,10 @@
+id: hf-chat-completion
+summary: Run chat completion via HF plugin
+tasks:
+  - id: chat_completion
+    fn: datasource.huggingface.chatCompletion
+    args:
+      model: <% inputs.body.model %>
+      provider: <% inputs.body.provider %>
+      messages: <% inputs.body.messages %>
+      max_tokens: <% inputs.body.max_tokens %>

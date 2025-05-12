@@ -1,0 +1,22 @@
+"http.post./hf-translation":
+  fn: hf-translation
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - inputs
+          properties:
+            inputs:
+              type: string
+            model:
+              type: string
+            provider:
+              type: string
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            type: object

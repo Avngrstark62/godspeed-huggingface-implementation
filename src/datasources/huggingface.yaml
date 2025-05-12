@@ -1,0 +1,8 @@
+type: huggingface
+api_key: <% config.huggingface.api_key %>
+default_model: "distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+models:
+  textClassification: SamLowe/roberta-base-go_emotions
+  chatCompletion: microsoft/Phi-3.5-mini-instruct
+  translation: Helsinki-NLP/opus-mt-en-es
+default_provider: hf-inference
