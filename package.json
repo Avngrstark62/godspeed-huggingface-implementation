@@ -39,6 +39,7 @@
 		"typescript": "^4.9.5"
 	},
 	"dependencies": {
+		"@avngrstark/plugins-huggingface-as-datasource": "^1.0.0",
 		"@godspeedsystems/core": "^2.4.8",
 		"@godspeedsystems/plugins-axios-as-datasource": "^1.0.3",
 		"@godspeedsystems/plugins-express-as-http": "^1.0.17",
